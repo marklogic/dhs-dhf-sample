@@ -42,13 +42,13 @@ curl -X PUT \
  -H content-type:application/json \
  -d@test-data/person1.json \
  --digest \
- --user cgreer:TsCa]Jy5M8T.Q#5/ \
+ --user username:password \
  "http://{$HOST}:8006/v1/documents?uri=person1.json&collection=Person"
  ```
 1. Check it
 ```
 curl --digest \
- --user cgreer:TsCa]Jy5M8T.Q#5/ \
+ --user username:password \
  "http://{$HOST}:8006/v1/documents?uri=person1.json"
 ```
 1. Run a harmonize flow
@@ -58,7 +58,7 @@ curl --digest \
 1. Read the harmonized document from FINAL
 ```
 curl --digest \
- --user cgreer:TsCa]Jy5M8T.Q#5/ \
+ --user username:password \
  "http://{$HOST}:8006/v1/documents?uri=person1.json&database=data-hub-FINAL"
 ```
 
