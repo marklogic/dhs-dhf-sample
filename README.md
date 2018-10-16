@@ -35,7 +35,7 @@ mlUsername  set to the user you made above
 mlPassword set to the password from the user above
 mlManageUsername  set to the user you made above
 mlManagePassword  set to the password from the user above
-1. Install hub modules `./gradlew hubInstallModules`
+1. Install hub modules  and user code `./gradlew mlLoadModules`
 1. Load a file from the test-data folder
 ```
 curl -X PUT \
